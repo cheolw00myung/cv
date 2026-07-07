@@ -128,36 +128,141 @@
 
 
 \begin{center}
-    \textbf{\Huge \scshape Cheolwoo Myung} \textbf{ /  Ph.D Student} \\ \vspace{10pt}
-    
-    Dept. of Electrical and Computer Engineering \\
-    Seoul National University \\
+    \textbf{\Huge \scshape Cheolwoo Myung} \textbf{ / System Security Researcher} \\ \vspace{10pt}
+    System LSI, Device Solutions \\
+    Samsung Electronics \\
     South Korea \\ \vspace{10pt}
-    
-    \small Phone: (+82) 10-5500-9036 $|$ Mail: \href{mailto:cwmyung@snu.ac.kr}{\underline{cwmyung@snu.ac.kr}} $|$ 
-    Lab: \href{https://compsec.snu.ac.kr}{\underline{CompSec at SNU}}
+
+    \small Phone: (+82) 10-5500-9036 $|$ Mail: \href{mailto:cheolwmyung@gmail.com}{\underline{cheolwmyung@gmail.com}} $|$ 
+    Company: \href{https://semiconductor.samsung.com}{\underline{Samsung Electronics}}
 \end{center}
 
 \vspace{15pt}
 %------RESEARCH INTERESTS-------
-\section{Research Interests}
+\section{Summary}
 
-I am interested in \textbf{system security}, especially the issues in \textbf{hypervisor}, \textbf{OS kernel} and \textbf{trusted execution environment}.
-Currently, my research focus is \textbf{software testing}, e.g., designing and implementing fuzzing system to detect vulnerabilities. In addition to the vulnerability finding, I am interested in various security issues such as kernel security and TEE.
+System Security Researcher with deep expertise in Trusted Execution Environments
+(TEE) and system virtualization. Possesses hands-on experience in designing and
+implementing trusted hypervisors (KVM with VFIO) and TEE frameworks (Intel SGX,
+AMD SEV-SNP). Proficient in vulnerability analysis and developing custom fuzzing
+systems for complex system software, including hypervisors (QEMU, Bhyve,
+Hyper-V) and kernels (Linux, Windows, Android bootloader). Eager to contribute a
+strong background in ARM and x86 architectures to the design and implementation
+of next-generation secure SoC products.
 
 \vspace{10pt}
 
+%-----------EDUCATION-----------
+\section{Education \& Career}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Samsung Electronics}{Mar. 2025 - Current}
+        {Hwaseong, South Korea}{}
+        {System Security Researcher, Samsung Electronics}
+        \vspace{-1em}
+
+    \resumeSubheading
+        {Seoul National University}{Sep. 2018 - Feb. 2025}
+        {Seoul, South Korea}{}
+        {Ph.D. in Electrical and Computer Engineering (Advisor: \href{https://lifeasageek.github.io/}{\underline{Byoungyoug Lee}})}
+        \vspace{-1em}
+
+        
+    \resumeSubheading
+      {Handong Global University}{Mar. 2012 - Aug. 2018}
+      {Pohang, South Korea}{}
+      {B.S. in Mechanical and Control Engineering}
+
+          
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\textbf{Developing ARM SoC Emulator for Knox Vault Secure OS}}
+          {Mar. 2025 -- Current}
+          {Samsung Electronics}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a high-fidelity ARM SoC emulator}
+            \resumeItem{Enabled pre-silicon OS development and security evaluation for Samsung Knox Vault}
+            \resumeItem{Technologies: QEMU, ARM, TEE}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Designing Secure and Efficient TEE Memory Sharing Framework}}
+          {Oct. 2024 -- Feb. 2025}
+          {Samsung Electronics}
+          \resumeItemListStart
+            \resumeItem{Design a trusted hypervisor to share TEE memory in a distributed system}
+            \resumeItem{Target: Intel SGX}
+            \resumeItem{Technologies: Intel SGX, KVM, VFIO, RDMA}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Designing of Android Bootloader Vulnerability Analysis}}
+          {Jan. 2023 -- Apr. 2024}
+          {Samsung Electronics}
+          
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a fuzzer to detect vulnerabilities of Android bootloader}
+            \resumeItem{Target: Samsung Android bootloader}
+            \resumeItem{Technologies: QEMU, AFL}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Implementing Secure Model Training Framework}}
+          {Mar. 2022 -- Apr. 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Implemented a secure model training framework to protect sensitive data}
+            \resumeItem{Technologies: KVM, VFIO, SEV-SNP}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Building Hypervisor Para-Virtualization Driver Fuzzing Framework}}
+          {Apr. 2021 -- Oct. 2021}
+          {National Security Research Institute of Korea (NSR)}
+          
+          \resumeItemListStart
+            \resumeItem{Designed a fuzzer to detect vulnerabilities of para-virtualized (PV) back-end device driver}
+            \resumeItem{Target: Hyper-V}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Building Hypervisor Fuzzing Framework}}
+          {Apr. 2020 -- Oct. 2020}
+          {National Security Research Institute of Korea (NSR)}
+          \resumeItemListStart
+            \resumeItem{Designed a fuzzer to find vulnerabilities of virtual device provided by hypervisor}
+            \resumeItem{Target: QEMU}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Developing Data Race Fuzzer for Binary OS Kernel}}
+          {Apr. 2019 -- Oct. 2019}
+          {National Security Research Institute of Korea (NSR)}
+          \resumeItemListStart
+            \resumeItem{Designed a fuzzer to detect data race bugs in OS kernel}
+            \resumeItem{Target: Windows 7, 10}
+            \resumeItem{Technologies: QEMU}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\vspace{7pt}
+%
 %-----------EXPERIENCE-----------
 \section{Publications}
   \resumeSubHeadingListStart
     \pubSubheading
-      {MalDev: Subverting Secure VM through Exploiting PCIe Address Translation Services (to appear)}
-      {Sangyun Kim, Kyungwook Boo, \textbf{Cheolwoo Myung}, Sangho Lee, and Byoungyoung Lee}
-      {34th USENIX Security Symposium (\textbf{Security}), August 2025.}
+      {S3NTRY: A Protection Framework for Secure and Efficient TEE Memory Disaggregated Systems}
+      {\textbf{Cheolwoo Myung}, Jaewon Hur, Adil Ahmad, and Byoungyoung Lee}
+      {Revising for resubmission}
       \vspace{5pt}
 
     \pubSubheading
-      {DLBox: New Model Training Framework for Protecting Training Data (to appear)}
+      {DLBox: New Model Training Framework for Protecting Training Data}
       {Jaewon Hur, Juheon Yi, \textbf{Cheolwoo Myung}, Sangyun Kim, Youngki Lee, and Byoungyoung Lee}
       {Network and Distributed System Security Symposium (\textbf{NDSS}), Febuary 2025.}
       \vspace{5pt}
@@ -169,98 +274,15 @@ Currently, my research focus is \textbf{software testing}, e.g., designing and i
   \resumeSubHeadingListEnd
 
 \vspace{10pt}
-%-----------PROJECTS-----------
-\section{Research Projects}
-
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Research on android bootloader vulnerability analysis technology}}
-          {Jan 2023 -- Apr 2024}
-          {Samsung Electronics}
-          
-          \resumeItemListStart
-            \resumeItem{Design a fuzzer to detect vulnerabilities of android bootloader}
-            \resumeItem{Target: Samsung android bootloader}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Research on hypervisor device driver vulnerability analysis technology}}
-          {Apr 2021 -- Oct 2021}
-          {National Security Research Institute of Korea (NSR)}
-          
-          \resumeItemListStart
-            \resumeItem{Design a fuzzer to detect vulnerabilities of para-virtualized (PV) back-end device driver}
-            \resumeItem{Target: Hyper-V}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Research on hypervisor vulnerability analysis technology}}
-          {Apr 2020 -- Oct 2020}
-          {National Security Research Institute of Korea (NSR)}
-          \resumeItemListStart
-            \resumeItem{Design a fuzzer to find vulnerabilities of virtual device provided by hypervisor}
-            \resumeItem{Target: QEMU}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-          {\textbf{Research on race condition vulnerability analysis technology}}
-          {Apr 2019 -- Oct 2019}
-          {National Security Research Institute of Korea (NSR)}
-          \resumeItemListStart
-            \resumeItem{Design a fuzzer to detect data race bugs in OS kernel}
-            \resumeItem{Target: Windows7, 10}
-          \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-
-\vspace{7pt}
 %
-\section{Reported Vulnerabilities (selected)}
-% CVE: description : CVSS
-
-\resumeSubHeadingListStart
-  \cveSubheading
-    {1. \textbf{CVE-2020-35506}: QEMU: Use-after-free in virtual SCSI device (am53c974)}{CVSS.v3: 6.7}
-
-  \cveSubheading
-    {2. \textbf{CVE-2020-35503}: QEMU: Null-pointer dereference in virtual SCSI device (megasas-gen2)}{CVSS.v3: 6.0}
-
-  \cveSubheading
-    {3. \textbf{CVE-2020-28916}: QEMU: Denial-of-Service in virtual network controller (e1000e)}{CVSS.v3: 5.5}
-
-\resumeSubHeadingListEnd
-
-\vspace{6pt}
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-        {Seoul National University}{Sep 2018 - Present}
-        {Seoul, South Korea}{}
-        {Ph.D. in Electrical and Computer Engineering (Advisor: \href{https://lifeasageek.github.io/}{\underline{Byoungyoug Lee}})}
-        
-    \resumeSubheading
-      {Handong Global University}{Mar 2012 - Aug 2018}
-      {Pohang, South Korea}{}
-      {B.S. in Mechanical and Control Engineering}
-          
-  \resumeSubHeadingListEnd
-
-
-\vspace{10pt}
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
-     \textbf{Languages}
-     \begin{itemize}
-      \item \textit{Knowledgeable:} {C, Go}
-      \item \textit{Have an experience with:} {C++, Python, Rust} \\
-     \end{itemize}
-     \textbf{Frameworks}{: AFL, syzkaller, QEMU} \\
+     \textbf{Languages:}{: C, C++, Python, Assembly (ARM, x86)} \\
+     \textbf{Frameworks}{: AFL, Syzkaller, QEMU, KVM, Docker, Trace32} \\
     }}
 \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
