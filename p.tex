@@ -44,7 +44,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.15in}
 
 \urlstyle{same}
 
@@ -78,8 +78,8 @@
 \newcommand{\pubSubheading}[3]{
   \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \vspace{5pt}
-      \textbf{#1} \\ \vspace{5pt}
+      \vspace{3pt}
+      \textbf{#1} \\ \vspace{3pt}
       #2 \\
       \textit{\small#3}
     \end{tabular*}\vspace{-7pt}
@@ -113,9 +113,9 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt, parsep=0pt, topsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=6pt, parsep=0pt, topsep=14pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -128,105 +128,105 @@
 
 
 \begin{center}
-    \textbf{\Huge \scshape Cheolwoo Myung} \textbf{ / System Security Researcher} \\ \vspace{10pt}
+    \textbf{\Huge \scshape Cheolwoo Myung} \textbf{ / Staff Engineer, Secure Systems} \\ \vspace{6pt}
     System LSI, Device Solutions \\
     Samsung Electronics \\
-    South Korea \\ \vspace{10pt}
+    South Korea \\ \vspace{6pt}
 
-    \small Phone: (+82) 10-5500-9036 $|$ Mail: \href{mailto:cheolwmyung@gmail.com}{\underline{cheolwmyung@gmail.com}} $|$ 
+    \small Phone: (+82) 10-5500-9036 $|$ Mail: \href{mailto:cheolwmyung@gmail.com}{\underline{cheolwmyung@gmail.com}} $|$
     Company: \href{https://semiconductor.samsung.com}{\underline{Samsung Electronics}}
 \end{center}
 
-\vspace{15pt}
+\vspace{4pt}
 %------RESEARCH INTERESTS-------
 \section{Summary}
 
-System Security Researcher with deep expertise in Trusted Execution Environments
-(TEE) and system virtualization. Possesses hands-on experience in designing and
-implementing trusted hypervisors (KVM with VFIO) and TEE frameworks (Intel SGX,
-AMD SEV-SNP). Proficient in vulnerability analysis and developing custom fuzzing
-systems for complex system software, including hypervisors (QEMU, Bhyve,
-Hyper-V) and kernels (Linux, Windows, Android bootloader). Eager to contribute a
-strong background in ARM and x86 architectures to the design and implementation
-of next-generation secure SoC products.
+Staff Engineer at Samsung Electronics leading secure element (SE) product
+engineering --- supporting Android system security services (e.g., KeyMint
+with RKP) and driving PoC engagements to bring the SE total solution
+to Android OEMs. Also drives hardware validation techniques for
+next-generation SE platforms, spanning a QEMU-based ARM SoC emulator that resolved
+software/hardware ambiguity for Samsung Knox Vault and a hardware-in-the-loop
+framework built on real chip debug/JTAG interfaces. Brings a Ph.D. research
+foundation in Trusted Execution Environments (Intel SGX, AMD SEV-SNP) and
+system virtualization security, with fuzzing research on hypervisors and OS
+kernels published at USENIX Security and NDSS. Eager to bring this foundation
+to the design of next-generation capability-based secure OS architectures.
 
-\vspace{10pt}
+\vspace{2pt}
 
-%-----------EDUCATION-----------
-\section{Education \& Career}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-        {Samsung Electronics}{Mar. 2025 - Current}
-        {Hwaseong, South Korea}{}
-        {System Security Researcher, Samsung Electronics}
-        \vspace{-1em}
-
-    \resumeSubheading
-        {Seoul National University}{Sep. 2018 - Feb. 2025}
-        {Seoul, South Korea}{}
-        {Ph.D. in Electrical and Computer Engineering (Advisor: \href{https://lifeasageek.github.io/}{\underline{Byoungyoug Lee}})}
-        \vspace{-1em}
-
-        
-    \resumeSubheading
-      {Handong Global University}{Mar. 2012 - Aug. 2018}
-      {Pohang, South Korea}{}
-      {B.S. in Mechanical and Control Engineering}
-
-          
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
+%-----------COMPANY PROJECTS-----------
+\section{Experience --- Samsung Electronics}
     \resumeSubHeadingListStart
-       \resumeProjectHeading
-          {\textbf{Developing ARM SoC Emulator for Knox Vault Secure OS}}
-          {Mar. 2025 -- Current}
+      \resumeProjectHeading
+          {\textbf{Secure Element Product Engineering}}
+          {Feb. 2026 -- Current}
           {Samsung Electronics}
           \resumeItemListStart
-            \resumeItem{Designed and implemented a high-fidelity ARM SoC emulator}
-            \resumeItem{Enabled pre-silicon OS development and security evaluation for Samsung Knox Vault}
-            \resumeItem{Technologies: QEMU, ARM, TEE}
+            \resumeItem{Implementing Android KeyMint (StrongBox) with RKP on Samsung's SE secure OS (S3SSE1A/S3SSE2A)}
+            \resumeItem{Achieved Android CTS/VTS certification for StrongBox-KeyMint and RKP}
+            \resumeItem{Leading PoC engagement with an Android OEM evaluating the SE total solution}
+            \resumeItem{Preparing demo applications to showcase the SE solution for future business development}
+            \resumeItem{Technologies: Android KeyMint, StrongBox, RKP, Trace32}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Designing Secure and Efficient TEE Memory Sharing Framework}}
-          {Oct. 2024 -- Feb. 2025}
+          {\textbf{Hardware-in-the-Loop (HIL) Framework for Secure Element Validation}}
+          {May 2026 -- Current}
           {Samsung Electronics}
           \resumeItemListStart
-            \resumeItem{Design a trusted hypervisor to share TEE memory in a distributed system}
-            \resumeItem{Target: Intel SGX}
+            \resumeItem{Designing a hardware-in-the-loop framework using real chip debug/JTAG interfaces}
+            \resumeItem{Introduced this HIL validation methodology, established in academic research, as the team's first implementation}
+            \resumeItem{Technologies: QEMU, JTAG debugging interface}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{ARM SoC Emulator for Knox Vault Secure OS}}
+          {Mar. 2025 -- Jan. 2026}
+          {Samsung Electronics}
+          \resumeItemListStart
+            \resumeItem{Designed a high-fidelity ARM SoC emulator for pre-silicon OS development on Samsung Knox Vault}
+            \resumeItem{Resolved approximately 5--6 ambiguous SW/HW issues, driving a hardware workaround in a chip revision}
+            \resumeItem{Technologies: QEMU, ARM}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PH.D. RESEARCH PROJECTS-----------
+\section{Research Projects --- Seoul National University}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Designing Secure and Efficient TEE Memory Sharing Framework}}
+          {Oct. 2024 -- Feb. 2025}
+          {Samsung Electronics (Industry Collaboration during Ph.D.)}
+          \resumeItemListStart
+            \resumeItem{Designed a trusted hypervisor-based framework to securely share TEE memory across a distributed system}
             \resumeItem{Technologies: Intel SGX, KVM, VFIO, RDMA}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Designing of Android Bootloader Vulnerability Analysis}}
           {Jan. 2023 -- Apr. 2024}
-          {Samsung Electronics}
-          
+          {Samsung Electronics (Industry Collaboration during Ph.D.)}
+
           \resumeItemListStart
-            \resumeItem{Designed and implemented a fuzzer to detect vulnerabilities of Android bootloader}
-            \resumeItem{Target: Samsung Android bootloader}
-            \resumeItem{Technologies: QEMU, AFL}
+            \resumeItem{Designed a QEMU/AFL-based fuzzer to detect Samsung Android bootloader vulnerabilities}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Implementing Secure Model Training Framework}}
           {Mar. 2022 -- Apr. 2023}
-          
+          {Seoul National University}
           \resumeItemListStart
-            \resumeItem{Implemented a secure model training framework to protect sensitive data}
-            \resumeItem{Technologies: KVM, VFIO, SEV-SNP}
+            \resumeItem{Implemented a secure model training framework (KVM, VFIO, SEV-SNP) to protect sensitive training data}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Building Hypervisor Para-Virtualization Driver Fuzzing Framework}}
           {Apr. 2021 -- Oct. 2021}
           {National Security Research Institute of Korea (NSR)}
-          
+
           \resumeItemListStart
-            \resumeItem{Designed a fuzzer to detect vulnerabilities of para-virtualized (PV) back-end device driver}
-            \resumeItem{Target: Hyper-V}
+            \resumeItem{Designed a fuzzer to detect vulnerabilities in Hyper-V's para-virtualized (PV) back-end device driver}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -234,23 +234,19 @@ of next-generation secure SoC products.
           {Apr. 2020 -- Oct. 2020}
           {National Security Research Institute of Korea (NSR)}
           \resumeItemListStart
-            \resumeItem{Designed a fuzzer to find vulnerabilities of virtual device provided by hypervisor}
-            \resumeItem{Target: QEMU}
+            \resumeItem{Designed a fuzzer to find vulnerabilities in virtual devices provided by the QEMU hypervisor}
           \resumeItemListEnd
-          
+
       \resumeProjectHeading
           {\textbf{Developing Data Race Fuzzer for Binary OS Kernel}}
           {Apr. 2019 -- Oct. 2019}
           {National Security Research Institute of Korea (NSR)}
           \resumeItemListStart
-            \resumeItem{Designed a fuzzer to detect data race bugs in OS kernel}
-            \resumeItem{Target: Windows 7, 10}
-            \resumeItem{Technologies: QEMU}
+            \resumeItem{Designed a QEMU-based fuzzer to detect data race bugs in the Windows 7/10 OS kernel}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
-\vspace{7pt}
 %
 %-----------EXPERIENCE-----------
 \section{Publications}
@@ -273,7 +269,6 @@ of next-generation secure SoC products.
       {31st USENIX Security Symposium (\textbf{Security}), August 2022.}
   \resumeSubHeadingListEnd
 
-\vspace{10pt}
 %
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
@@ -281,8 +276,24 @@ of next-generation secure SoC products.
     {\item{
      \textbf{Languages:}{: C, C++, Python, Assembly (ARM, x86)} \\
      \textbf{Frameworks}{: AFL, Syzkaller, QEMU, KVM, Docker, Trace32} \\
+     \textbf{Secure Systems}{: Android KeyMint/StrongBox, Remote Key Provisioning (RKP), Secure Element (SE), Intel SGX, AMD SEV-SNP, JTAG/Chip Debug} \\
     }}
 \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Seoul National University}{Sep. 2018 - Feb. 2025}
+        {Seoul, South Korea}{}
+        {Ph.D. in Electrical and Computer Engineering (Advisor: \href{https://lifeasageek.github.io/}{\underline{Byoungyoug Lee}})}
+        \vspace{-1em}
+
+    \resumeSubheading
+      {Handong Global University}{Mar. 2012 - Aug. 2018}
+      {Pohang, South Korea}{}
+      {B.S. in Mechanical and Control Engineering}
+  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
